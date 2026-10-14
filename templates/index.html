@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}D&amp;C Estética Automotiva | Cuidado automotivo{% endblock %}
+{% block content %}
+<main>
+  <section class="hero" id="inicio">
+    <img class="hero-image" src="{{ url_for('static', filename='imagens/WhatsApp Image 2026-10-12 at 20.21.43.jpeg') }}" alt="Carro coberto de espuma durante a lavagem" />
+    <div class="hero-content">
+      <p class="eyebrow"><span></span> CUIDADO QUE SE VÊ</p>
+      <h1>Seu carro merece<br />um novo <em>brilho.</em></h1>
+      <p class="hero-copy">Cuidado em cada detalhe para deixar seu veículo limpo, protegido e pronto para qualquer caminho.</p>
+      <a class="button button-primary" href="{{ url_for('contact') }}">Agende seu horário <span aria-hidden="true">→</span></a>
+      <a class="hero-services-link" href="{{ url_for('services') }}">Conheça nossos serviços e preços <span aria-hidden="true">↗</span></a>
+      <div class="hero-note"><span aria-hidden="true">✦</span> Capricho, qualidade e atenção ao seu veículo</div>
+    </div>
+    <div class="hero-label" aria-hidden="true">ESTÉTICA AUTOMOTIVA <span>•</span> DESDE SEMPRE</div>
+  </section>
+</main>
+{% endblock %}

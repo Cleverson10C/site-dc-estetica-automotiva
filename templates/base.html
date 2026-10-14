@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#171717" />
+    <meta name="description" content="D&C Estética Automotiva: cuidado em cada detalhe para o seu veículo." />
+    <title>{% block title %}D&C Estética Automotiva{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=4" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="{{ url_for('home') }}" aria-label="D&C Estética Automotiva, início">
+        <img class="brand-logo" src="{{ url_for('static', filename='imagens/logo.jpeg') }}" alt="" /><span>D&amp;C ESTÉTICA AUTOMOTIVA</span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="{{ url_for('home') }}" {% if active_page == 'inicio' %}aria-current="page"{% endif %}>Início</a></li>
+          <li><a href="{{ url_for('services') }}" {% if active_page == 'servicos' %}aria-current="page"{% endif %}>Serviços</a></li>
+          <li><a href="{{ url_for('about') }}" {% if active_page == 'sobre' %}aria-current="page"{% endif %}>Sobre nós</a></li>
+          <li><a href="{{ url_for('contact') }}" {% if active_page == 'contato' %}aria-current="page"{% endif %}>Contato</a></li>
+        </ul>
+      </nav>
+      <a class="header-cta" href="{{ url_for('contact') }}">Agendar atendimento <span aria-hidden="true">↗</span></a>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+      <a class="brand" href="{{ url_for('home') }}"><img class="brand-logo" src="{{ url_for('static', filename='imagens/logo.jpeg') }}" alt="" /><span>D&amp;C ESTÉTICA AUTOMOTIVA</span></a>
+      <div class="footer-contact"><a href="https://wa.me/554298404537" target="_blank" rel="noopener noreferrer">WhatsApp: +55 42 9840-4537</a><span>Rua Guilherme Mafra, 72 · Bairro Curtume</span></div>
+      <p>© 2026 D&C Estética Automotiva. Cuidado em cada detalhe.</p>
+      <a class="back-top" href="{{ url_for('home') }}">Voltar ao início ↑</a>
+    </footer>
+  </body>
+</html>

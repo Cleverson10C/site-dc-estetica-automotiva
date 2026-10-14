@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Sobre nós | D&C Estética Automotiva{% endblock %}
+{% block content %}
+<main>
+  <section class="page-hero"><p class="eyebrow">SOBRE A D&C ESTÉTICA AUTOMOTIVA</p><h1>Cuidado que vai além do <em>brilho.</em></h1><p>Conheça o jeito D&C de cuidar do seu carro: com atenção, dedicação e respeito por cada detalhe.</p></section>
+  <section class="about about-page">
+    <div class="about-image" role="img" aria-label="Carro limpo e brilhando após a lavagem"></div>
+    <div class="about-copy">
+      <p class="eyebrow">SEU CARRO EM BOAS MÃOS</p>
+      <h2>Seu carro merece um cuidado à <em>altura.</em></h2>
+      <p>Na <strong>D&amp;C Estética Automotiva</strong>, sabemos que o carro faz parte da sua rotina e de muitas boas histórias. Por isso, cada atendimento começa com atenção ao que você precisa e termina com o cuidado que o seu veículo merece.</p>
+      <p>Trabalhamos com dedicação em cada etapa, da lavagem à finalização, usando produtos de qualidade e técnicas apropriadas para valorizar a aparência do seu automóvel. Limpamos com cuidado, respeitamos os materiais e observamos os detalhes que fazem diferença no resultado.</p>
+      <p>Mais do que entregar um carro limpo, queremos que você tenha uma experiência tranquila, transparente e agradável. Explicamos as opções, ouvimos suas preferências e tratamos seu veículo como se fosse nosso, com capricho e responsabilidade.</p>
+      <p>Seja para manter o brilho do dia a dia ou renovar o visual para uma ocasião especial, conte com uma equipe que gosta do que faz e tem orgulho de cada carro bem cuidado. Na D&amp;C, você encontra atenção de verdade e um resultado feito para dar gosto de voltar a dirigir.</p>
+      <a class="text-link" href="{{ url_for('contact') }}">Vamos cuidar do seu carro <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+  <section class="about-promise section-wrap"><p class="eyebrow">NOSSO COMPROMISSO</p><h2>Capricho em cada etapa.<br />Confiança em cada <em>visita.</em></h2><p>Queremos ser a sua escolha sempre que seu veículo precisar de cuidado. Agende um atendimento e descubra como pequenos detalhes podem fazer uma grande diferença.</p><a class="button button-primary" href="{{ url_for('contact') }}">Fale com a nossa equipe <span aria-hidden="true">→</span></a></section>
+</main>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Serviços | D&C Estética Automotiva{% endblock %}
+{% block content %}
+<main>
+  <section class="page-hero"><p class="eyebrow">SERVIÇOS D&amp;C</p><h1>Cuidado completo para o seu <em>veículo.</em></h1><p>Confira as opções de lavagem, estética e higienização. Para agendar ou confirmar os detalhes, fale com a nossa equipe.</p></section>
+  <section class="services section-wrap" id="servicos">
+    <div class="section-heading"><div><p class="eyebrow">NOSSO CUIDADO</p><h2>Serviços e <em>valores.</em></h2></div><p>Trabalhamos com atenção em cada etapa para valorizar seu veículo.</p></div>
+    <div class="service-grid">
+      <article class="service-card"><span class="service-number">01</span><h3>Ducha</h3><p>Lavagem rápida para tirar o excesso de sujeira do dia a dia.</p><strong class="service-price">R$ 20,00</strong><a href="{{ url_for('contact') }}">Agendar <span aria-hidden="true">↗</span></a></article>
+      <article class="service-card"><span class="service-number">02</span><h3>Lavagem externa</h3><p>Pré-lavagem com snow foam, shampoo neutro, chassi, rodas e caixa de rodas, com selante nos pneus.</p><strong class="service-price">R$ 39,00</strong><a href="{{ url_for('contact') }}">Agendar <span aria-hidden="true">↗</span></a></article>
+      <article class="service-card"><span class="service-number">03</span><h3>Lavagem simples</h3><p>Limpeza externa e interna com aspiração, painel, console, portas, porta-malas, vidros e revitalização de plásticos.</p><strong class="service-price">R$ 69,99</strong><a href="{{ url_for('contact') }}">Agendar <span aria-hidden="true">↗</span></a></article>
+      <article class="service-card"><span class="service-number">04</span><h3>Lavagem completa</h3><p>Inclui lavagem simples, limpeza externa do motor (opcional) e cera de carnaúba com hidrorepelência.</p><strong class="service-price">R$ 149,99</strong><a href="{{ url_for('contact') }}">Agendar <span aria-hidden="true">↗</span></a></article>
+      <article class="service-card"><span class="service-number">05</span><h3>Correção de pintura / polimento</h3><p>Polimento comercial ou técnico: elimina até 80% ou mais de riscos profundos, manchas e opacidade da lataria.</p><strong class="service-price">A partir de R$ 449,99</strong><a href="{{ url_for('contact') }}">Agendar <span aria-hidden="true">↗</span></a></article>
+      <article class="service-card"><span class="service-number">06</span><h3>Restauração de faróis</h3><p>Restaura a transparência e remove o amarelado das lentes de policarbonato.</p><strong class="service-price">R$ 169,99</strong><a href="{{ url_for('contact') }}">Agendar <span aria-hidden="true">↗</span></a></article>
+      <article class="service-card"><span class="service-number">07</span><h3>Revitalização de plásticos</h3><p>Recuperação e proteção UV de para-choques e molduras desbotadas.</p><strong class="service-price">R$ 29,99</strong><a href="{{ url_for('contact') }}">Agendar <span aria-hidden="true">↗</span></a></article>
+      <article class="service-card"><span class="service-number">08</span><h3>Higienização e estofados</h3><p>Limpeza interna detalhada, aspiração profunda e limpeza de painel, console e portas. Higienização de bancos de tecido ou couro, hidratação do couro para devolver maciez e prevenir rachaduras, e limpeza do teto para remover manchas e odores.</p><strong class="service-price">A partir de R$ 549,99</strong><a href="{{ url_for('contact') }}">Agendar <span aria-hidden="true">↗</span></a></article>
+    </div>
+  </section>
+  <section class="featured-services section-wrap">
+    <div class="section-heading"><div><p class="eyebrow">CUIDADOS ESPECIAIS</p><h2>Mais atenção<br />a cada <em>detalhe.</em></h2></div><p>Conheça dois cuidados que ajudam a renovar o conforto e a aparência do seu veículo.</p></div>
+    <div class="featured-grid">
+      <article class="featured-card">
+        <img src="{{ url_for('static', filename='imagens/WhatsApp Image 2026-10-12 at 20.20.12.jpeg') }}" alt="Arte da D&C sobre higienização interna automotiva" loading="lazy" />
+        <div class="featured-copy"><p class="eyebrow">CONFORTO POR DENTRO</p><h3>Higienização interna</h3><p>Limpeza profunda para deixar o carro mais limpo, confortável e saudável, ajudando a eliminar odores. Cuidado para bancos e estofados, teto, portas e painel.</p><a href="{{ url_for('contact') }}">Agendar pelo contato <span aria-hidden="true">↗</span></a></div>
+      </article>
+      <article class="featured-card">
+        <img src="{{ url_for('static', filename='imagens/WhatsApp Image 2026-10-12 at 20.20.13.jpeg') }}" alt="Arte da D&C sobre restauração de faróis com polimento" loading="lazy" />
+        <div class="featured-copy"><p class="eyebrow">MAIS BRILHO E VISIBILIDADE</p><h3>Restauração de faróis</h3><p>Restauração com polimento para recuperar a transparência das lentes, melhorar a visibilidade e proteger contra os raios UV, com durabilidade anunciada de 1 a 3 anos.</p><a href="{{ url_for('contact') }}">Agendar pelo contato <span aria-hidden="true">↗</span></a></div>
+      </article>
+    </div>
+  </section>
+</main>
+{% endblock %}

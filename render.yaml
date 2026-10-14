@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: dc-estetica-automotiva
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:asgi_app --host 0.0.0.0 --port $PORT
